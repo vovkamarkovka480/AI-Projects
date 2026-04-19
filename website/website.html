@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clown Mayhem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Clown Mayhem</h1>
+  <p>Безумие в цирковом шатре</p>
+</header>
+
+<section class="hero">
+  <img id="heroImg" src="https://i.postimg.cc/dQr1Fbkf/image-(5).jpg">
+</section>
+
+<section class="about">
+  <h2>Об игре</h2>
+  <p>
+    Динамичный 2D шутер, где ты играешь за клоуна и сражаешься против людей в масках
+    внутри заброшенного цирка.
+  </p>
+</section>
+
+<!-- 🔥 ГЛАВНЫЙ ГЕРОЙ -->
+<section class="character">
+  <h2>Главный герой</h2>
+  <div class="flex">
+    <img src="https://i.postimg.cc/Z5K6s8YM/image-4-removebg-preview.png">
+    <p>
+      Клоун — быстрый и опасный боец. Использует банановый меч и магические атаки.
+      Может атаковать на расстоянии и уничтожать врагов с эффектными ударами.
+    </p>
+  </div>
+</section>
+
+<!-- ⚔️ МЕХАНИКИ -->
+<section class="mechanics">
+  <h2>Игровые механики</h2>
+  <ul>
+    <li>🎮 Управление: WASD</li>
+    <li>⚔️ Атака на кнопку F</li>
+    <li>🧠 Мимик копирует твои действия</li>
+    <li>🎯 Автонаводка на ближайшего врага</li>
+    <li>⏳ Перезарядка атак</li>
+  </ul>
+</section>
+
+<!-- 👹 ВРАГИ -->
+<section class="enemies">
+  <h2>Враги</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.postimg.cc/Y0ZTDrYY/image-7-removebg-preview.png">
+      <p><b>Ближний</b><br>Атакует вплотную</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.postimg.cc/SR3H1SC6/image-8-removebg-preview.png">
+      <p><b>Дальний</b><br>Стреляет с расстояния</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.postimg.cc/2yMg9khb/image-9-removebg-preview.png">
+      <p><b>Мимик</b><br>Копирует тебя</p>
+    </div>
+  </div>
+</section>
+
+<!-- ⭐ ФИЧИ -->
+<section class="features">
+  <h2>Особенности</h2>
+  <div class="grid">
+    <div class="card">🔥 Быстрый геймплей</div>
+    <div class="card">🎭 Уникальные враги</div>
+    <div class="card">💥 Эффекты атак</div>
+    <div class="card">🎪 Атмосфера цирка</div>
+  </div>
+</section>
+
+<!-- 🖼 ГАЛЕРЕЯ -->
+<section class="gallery">
+  <h2>Галерея</h2>
+
+  <div class="images">
+    <img class="gallery-img" src="https://i.postimg.cc/Z5K6s8YM/image-4-removebg-preview.png">
+    <img class="gallery-img" src="https://i.postimg.cc/Y0ZTDrYY/image-7-removebg-preview.png">
+    <img class="gallery-img" src="https://i.postimg.cc/SR3H1SC6/image-8-removebg-preview.png">
+  </div>
+
+  <input type="file" id="upload" accept="image/*">
+</section>
+
+<section class="play">
+  <h2>Играть</h2>
+  <button onclick="playGame()">Запустить игру</button>
+</section>
+
+<footer>
+  <p>© 2026 Clown Mayhem</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
