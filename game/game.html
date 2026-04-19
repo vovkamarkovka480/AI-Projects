@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clown Mayhem — Full</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Главное меню -->
+  <div id="menuOverlay" class="overlay visible">
+    <div class="panel">
+      <h1>Clown Mayhem</h1>
+      <div class="row">
+        <label>Difficulty:</label>
+        <select id="menuDifficulty">
+          <option value="Easy">Easy</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>Start level:</label>
+        <select id="menuStartLevel">
+          <!-- levels 1..10 -->
+        </select>
+      </div>
+      <div class="row">
+        <button id="btnStartGame">Start Game</button>
+      </div>
+      <div class="hint">WASD / Arrows — move · F — attack</div>
+    </div>
+  </div>
+
+  <!-- Модалки для Game Over / Level Complete -->
+  <div id="modalOverlay" class="overlay hidden">
+    <div class="panel" id="modalPanel">
+      <h2 id="modalTitle">Game Over</h2>
+      <p id="modalText"></p>
+      <div class="row" id="modalButtons">
+        <!-- buttons injected -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Игровая сцена -->
+  <div id="game" tabindex="0">
+    <div id="background"></div>
+
+    <div id="player"></div>
+
+    <div id="enemies"></div>
+    <div id="projectiles"></div>
+
+    <div id="hud">
+      <div id="info">
+        <span id="hp">HP: 100</span>
+        <span id="level">Level: 1</span>
+        <span id="difficultyDisplay">Difficulty: Easy</span>
+      </div>
+      <div id="controls">
+        <button id="btnPause">Pause</button>
+        <button id="btnRespawn">Respawn Level</button>
+      </div>
+      <div id="hints">
+        <small>Click the game area to focus controls. WASD/Arrows — move, F — attack.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
